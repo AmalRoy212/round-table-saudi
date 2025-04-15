@@ -15,35 +15,68 @@
   </head>
   <body class="bg-white text-gray-900 font-sans">
     <!-- Navbar -->
-    <header class="absolute top-0 left-0 w-full z-50 text-white">
+    <header
+      class="fixed top-1 left-1 w-[99%] z-50 text-white backdrop-blur-md bg-white/10 shadow-md rounded-md"
+    >
       <div
-        class="container mx-auto px-4 py-4 flex justify-between items-center"
+        class="container mx-auto px-4 py-2 flex justify-between items-center"
       >
         <div class="text-lg font-bold">🔺</div>
         <nav class="space-x-6 text-sm">
-          <a href="#" class="hover:underline">Home</a>
-          <a href="#" class="hover:underline">Who we are</a>
-          <a href="#" class="hover:underline">Global Advisory Board</a>
-          <a href="#" class="hover:underline">Contact us</a>
+          <a href="#" class="hover:underline text-slate-300">Home</a>
+          <a href="#" class="hover:underline text-slate-300">Who we are</a>
+          <a href="#" class="hover:underline text-slate-300"
+            >Global Advisory Board</a
+          >
+          <a href="#" class="hover:underline text-slate-300">Contact us</a>
         </nav>
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section
     <section
       class="relative h-screen bg-cover bg-center"
       style="
-        background-image: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df');
+        background-image: url('https://img.freepik.com/free-photo/digital-circle-circuit-blue-background-futuristic-technology_53876-124643.jpg?t=st=1744705846~exp=1744709446~hmac=6aca36f96551d2e322fae8051866cac04bc14665226583a9aa387cd8fef69af7&w=1380');
       "
     >
       <div class="absolute inset-0 bg-black opacity-50"></div>
       <div
-        class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4"
+        class="relative z-10 flex flex-col justify-center  h-full text-white text-center px-4"
       >
-        <img src="./assets/images/logo.png" class="w-[400px]" />
-        <h1 class="text-3xl md:text-5xl font-bold mb-4 mt-[-3rem]">Accelerating Data Unification & Delivery Through Intelligent Data
-            Virtualization</h1>
+        <img src="./assets/images/logo.png" class="w-[600px]" />
         <p class="text-sm md:text-lg">
+          17 February 2025 | Hyatt Regency Riyadh Olaya, Saudi Arabia
+        </p>
+      </div>
+    </section> -->
+
+    <!-- Hero Section -->
+    <section class="relative h-screen overflow-hidden">
+      <!-- Flipped video background -->
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source
+          src="https://videocdn.cdnpk.net/videos/5ea570f1-3a7b-56f8-b7e4-b7c327a64b51/horizontal/previews/clear/large.mp4?token=exp=1744707448~hmac=57add3c10722c38a71ceb1fa5262eecb65004a1b07af130abf0caab7d5fa6672"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black opacity-50 z-[1]"></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-[2] flex flex-col justify-center h-full text-white text-center px-4"
+      >
+        <img src="./assets/images/logo.png" class="w-[700px]" />
+        <p class="text-sm md:text-lg mt-[-10rem]">
           17 February 2025 | Hyatt Regency Riyadh Olaya, Saudi Arabia
         </p>
       </div>
@@ -51,10 +84,11 @@
 
     <!-- Tagline Section -->
     <section class="bg-black text-white text-center py-12 px-4">
-      <!-- <h2 class="text-2xl md:text-3xl font-bold leading-relaxed">
-        Accelerating Data Unification <br> & Delivery Through Intelligent Data <br>
+      <h2 class="text-2xl md:text-3xl font-bold leading-relaxed">
+        Accelerating Data Unification <br />
+        & Delivery Through Intelligent Data <br />
         Virtualization
-      </h2> -->
+      </h2>
     </section>
 
     <!-- Overview Section -->
@@ -74,7 +108,7 @@
             business agility
           </p>
           <ul class="space-y-4">
-            <li class="flex items-center justify-center gap-x-4">
+            <li class="flex items-center gap-x-4">
               <img
                 class="w-[100px] h-[100px] rounded-lg object-cover"
                 src="https://www.vertech.com/hs-fs/hubfs/UNS-1.png?height=400&name=UNS-1.png"
@@ -91,7 +125,7 @@
                 analytics.
               </p>
             </li>
-            <li class="flex items-center justify-center gap-x-4">
+            <li class="flex items-center gap-x-4">
               <img
                 class="w-[100px] h-[100px] rounded-lg object-cover"
                 src="https://cdn-icons-png.flaticon.com/512/2245/2245313.png"
@@ -106,7 +140,7 @@
                 governance and access controls from a unified platform.
               </p>
             </li>
-            <li class="flex items-center justify-center gap-x-4">
+            <li class="flex items-center gap-x-4">
               <img
                 class="w-[100px] h-[100px] rounded-lg object-cover"
                 src="https://res.cloudinary.com/talend/image/upload/w_1408/q_auto/qlik/glossary/shared/seo-hero-generic_jwezad.jpg"
@@ -122,10 +156,10 @@
                 while minimizing unnecessary cloud expenditures.
               </p>
             </li>
-            <li class="flex items-center justify-center gap-x-4">
+            <li class="flex items-center gap-x-4">
               <img
-                class="w-[130px] h-[100px] rounded-lg object-cover"
-                src="https://cdn1.vectorstock.com/i/1000x1000/66/50/ai-icon-artificial-intelligence-technology-vector-40116650.jpg"
+                class="w-[100px] h-[100px] rounded-lg object-cover"
+                src="https://img.freepik.com/free-vector/head-with-ai-chip_78370-3672.jpg?t=st=1744709188~exp=1744712788~hmac=4937829e42f73a999372508d4ff1835d50f684c99f351d7a5c5352bc82acdade&w=740"
                 alt=""
               />
               <p>
@@ -209,20 +243,13 @@
             </p>
           </div>
         </div>
-
-        <!-- <p class="mt-6 text-gray-600">
-          We’ll aggregate participant insights through a survey to inform the
-          roundtable proceedings and distribute key points and minutes to
-          attendees and a wider audience under Chatham House Rules.
-        </p> -->
       </div>
     </section>
 
     <!-- Participants Section -->
-    <section class="bg-white py-16 px-6 md:px-20">
+    <!-- <section class="bg-white py-16 px-6 md:px-20">
       <h3 class="text-2xl font-bold mb-8">Participants</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        <!-- Repeat this block for each participant -->
         <div class="text-center">
           <img
             src="https://via.placeholder.com/150x200"
@@ -265,10 +292,8 @@
           <p class="font-semibold">Taha Bin Hafeez</p>
           <p class="text-sm text-gray-600">Industry Expert<br />KSA</p>
         </div>
-        <!-- Add additional participants following the above pattern -->
-        <!-- ... repeat for all shown in your image ... -->
       </div>
-    </section>
+    </section> -->
 
     <!-- Why Attend Section -->
     <section class="bg-black text-white py-20 px-6 md:px-20">
@@ -363,6 +388,22 @@
           required
           class="w-full border border-gray-300 p-3 rounded-md h-32 resize-none focus:ring-2 focus:ring-black"
         ></textarea>
+
+        <!-- Consent checkbox -->
+        <div class="flex items-start space-x-2">
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            required
+            class="mt-1"
+          />
+          <label for="consent" class="text-sm text-gray-700">
+            I agree to the processing of my data in accordance with the privacy
+            policy.
+          </label>
+        </div>
+
         <button
           type="submit"
           class="bg-black text-white py-3 px-6 rounded hover:bg-gray-800 transition w-full md:w-auto"
@@ -388,7 +429,7 @@
         </div>
         <div>
           <h5 class="font-semibold mb-1">📨 Get in touch</h5>
-          <p>info@leadersroundtables.com</p>
+          <p>info@capstonemiddleeast.com</p>
         </div>
         <div>
           <h5 class="font-semibold mb-1">🌐 Join the community</h5>

@@ -16,19 +16,21 @@
   <body class="bg-white text-gray-900 font-sans">
     <!-- Navbar -->
     <header
-      class="fixed top-1 left-1 w-[99%] z-50 text-white backdrop-blur-md bg-white/10 shadow-md rounded-md"
+      class="fixed top-1 left-1 w-[99%] z-50 text-white backdrop-blur-md bg-[#02071A]/20 shadow-md rounded-md"
     >
       <div
         class="container mx-auto px-4 py-2 flex justify-between items-center"
       >
-        <div class="text-lg font-bold">🔺</div>
+        <img
+          class="w-20 h-10 ml-[-2rem] object-contain"
+          src="https://saudi.idasummit.com/_next/image?url=%2Fimages%2Flogos%2Flogo.png&w=256&q=75"
+          alt=""
+        />
         <nav class="space-x-6 text-sm">
-          <a href="#" class="hover:underline text-slate-300">Home</a>
-          <a href="#" class="hover:underline text-slate-300">Who we are</a>
-          <a href="#" class="hover:underline text-slate-300"
-            >Global Advisory Board</a
-          >
-          <a href="#" class="hover:underline text-slate-300">Contact us</a>
+          <a href="#hero" class="hover:underline">Home</a>
+          <a href="#about" class="hover:underline">Who we are</a>
+          <a href="#format" class="hover:underline">Event Format</a>
+          <a href="#contact" class="hover:underline">Contact us</a>
         </nav>
       </div>
     </header>
@@ -52,7 +54,7 @@
     </section> -->
 
     <!-- Hero Section -->
-    <section class="relative h-screen overflow-hidden">
+    <section id="hero" class="relative h-screen overflow-hidden">
       <!-- Flipped video background -->
       <video
         class="absolute inset-0 w-full h-full object-cover"
@@ -61,7 +63,7 @@
         loop
         playsinline
       >
-        <source src="./assets/videos/bg.mp4" type="video/mp4" />
+        <source src="./assets/videos/bg-1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -72,24 +74,30 @@
       <div
         class="relative z-[2] flex flex-col justify-center h-full text-white text-center px-4"
       >
-        <img src="./assets/images/logo.png" class="w-[700px]" />
-        <p class="text-sm md:text-lg mt-[-10rem]">
-          26th May 2025 | Dammam, Saudi Arabia
+        <img src="./assets/images/logo.png" class="w-[700px] mx-auto" />
+        <h2
+          class="text-4xl md:text-5xl px-5 font-bold leading-relaxed mt-[-6rem]"
+        >
+          Accelerating Data Unification & Delivery Through Intelligent Data
+          Virtualization
+        </h2>
+        <p class="text-xl mt-3 md:text-lg">
+          📅 26th May 2025 | 📍 Dammam, Saudi Arabia
         </p>
       </div>
     </section>
 
     <!-- Tagline Section -->
-    <section class="bg-black text-white text-center py-12 px-4">
+    <!-- <section class="bg-black text-white text-center py-12 px-4">
       <h2 class="text-2xl md:text-3xl font-bold leading-relaxed">
         Accelerating Data Unification <br />
         & Delivery Through Intelligent Data <br />
         Virtualization
       </h2>
-    </section>
+    </section> -->
 
     <!-- Overview Section -->
-    <section class="py-16 px-6 md:px-20">
+    <section id="about" class="py-16 px-6 md:px-20">
       <h3 class="text-4xl font-bold mb-6">Overview</h3>
       <div class="flex flex-col md:flex-row gap-10">
         <div class="md:w-2/3 space-y-4 text-gray-700">
@@ -107,7 +115,7 @@
           <ul class="space-y-4">
             <li class="flex items-center gap-x-4">
               <img
-                class="w-[100px] h-[100px] rounded-lg object-cover"
+                class="w-[100px] h-[100px] shadow-md rounded-lg object-cover"
                 src="https://www.vertech.com/hs-fs/hubfs/UNS-1.png?height=400&name=UNS-1.png"
                 alt=""
               />
@@ -124,7 +132,7 @@
             </li>
             <li class="flex items-center gap-x-4">
               <img
-                class="w-[100px] h-[100px] rounded-lg object-cover"
+                class="w-[100px] h-[100px] shadow-md rounded-lg object-contain"
                 src="https://cdn-icons-png.flaticon.com/512/2245/2245313.png"
                 alt=""
               />
@@ -139,7 +147,7 @@
             </li>
             <li class="flex items-center gap-x-4">
               <img
-                class="w-[100px] h-[100px] rounded-lg object-cover"
+                class="w-[100px] h-[100px] shadow-md rounded-lg object-cover"
                 src="https://res.cloudinary.com/talend/image/upload/w_1408/q_auto/qlik/glossary/shared/seo-hero-generic_jwezad.jpg"
                 alt=""
               />
@@ -155,8 +163,8 @@
             </li>
             <li class="flex items-center gap-x-4">
               <img
-                class="w-[100px] h-[100px] rounded-lg object-cover"
-                src="https://img.freepik.com/free-vector/head-with-ai-chip_78370-3672.jpg?t=st=1744709188~exp=1744712788~hmac=4937829e42f73a999372508d4ff1835d50f684c99f351d7a5c5352bc82acdade&w=740"
+                class="w-[100px] shadow-md h-[100px] rounded-lg object-cover"
+                src="https://img.freepik.com/free-psd/technology-icon-rendering_23-2150613824.jpg?t=st=1744953891~exp=1744957491~hmac=b3f69ff3346f2cf5b86fd3657233b60b68e139f3d973f5b3d2782716b72f76dd&w=740"
                 alt=""
               />
               <p>
@@ -174,14 +182,14 @@
           <img
             src="https://escience.washington.edu/wp-content/uploads/2022/10/Incubator-header.jpg"
             alt="Overview Image"
-            class="rounded-lg shadow-lg h-full object-cover"
+            class="rounded-lg shadow-xl h-full object-cover"
           />
         </div>
       </div>
     </section>
 
     <!-- Event Format Details -->
-    <section class="bg-white py-16 px-6 md:px-20">
+    <section id="format" class="bg-white py-16 px-6 md:px-20">
       <div>
         <h3 class="text-4xl font-bold mb-6">Event Format</h3>
         <p class="text-gray-700 mb-8">
@@ -192,7 +200,7 @@
         <div class="flex flex-col md:flex-row md:justify-between gap-6">
           <!-- Case Studies -->
           <div
-            class="flex-1 bg-slate-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center"
+            class="flex-1 bg-[#02071A] text-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/8238/8238753.png"
@@ -200,7 +208,7 @@
               class="w-24 h-24 mb-4"
             />
             <h3 class="font-bold text-lg">Case Studies</h3>
-            <p class="text-gray-700 mt-2">
+            <p class="text-gray-300 mt-2">
               Real-world success stories highlighting innovative implementations
               and outcomes from regional and global markets.
             </p>
@@ -208,7 +216,7 @@
 
           <!-- Roundtable Discussions -->
           <div
-            class="flex-1 bg-slate-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center"
+            class="flex-1 bg-[#02071A] text-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
           >
             <img
               src="./assets/images/round.png"
@@ -216,7 +224,7 @@
               class="w-24 h-24 mb-4"
             />
             <h3 class="font-bold text-lg">Roundtable Discussions</h3>
-            <p class="text-gray-700 mt-2">
+            <p class="text-gray-300 mt-2">
               Highly interactive sessions that foster open dialogue, allowing
               participants to exchange ideas, explore challenges, and co-create
               practical solutions.
@@ -225,7 +233,7 @@
 
           <!-- Expert Presentations -->
           <div
-            class="flex-1 bg-slate-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center"
+            class="flex-1 bg-[#02071A] text-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
           >
             <img
               src="https://cdn-icons-png.freepik.com/256/8439/8439023.png?semt=ais_hybrid"
@@ -233,7 +241,7 @@
               class="w-24 h-24 mb-4"
             />
             <h3 class="font-bold text-lg">Expert Presentations</h3>
-            <p class="text-gray-700 mt-2">
+            <p class="text-gray-300 mt-2">
               Curated insights from industry leaders focusing on emerging
               trends, proven strategies, and best practices shaping the future
               of data, AI, and digital transformation.
@@ -293,7 +301,7 @@
     </section> -->
 
     <!-- Why Attend Section -->
-    <section class="bg-black text-white py-20 px-6 md:px-20">
+    <section id="why" class="bg-[#02071A] text-white py-20 px-6 md:px-20">
       <h3 class="text-3xl font-bold mb-12 text-center">Why attend?</h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
         <div>
@@ -354,7 +362,7 @@
     </section>
 
     <!-- Contact Section with Form -->
-    <section class="bg-white text-center py-20 px-6 md:px-20">
+    <section id="contact" class="bg-white text-center py-20 px-6 md:px-20">
       <h3 class="text-xl md:text-2xl mb-6">
         Connect with our team<br />for further information
       </h3>
@@ -407,14 +415,56 @@
             class="mt-1"
           />
           <label for="consent" class="text-sm text-gray-700">
-            I agree to the processing of my data in accordance with the privacy
-            policy.
+            By filling up this form, I agree to the above Terms and Conditions.
+            I officially and formally mark my acceptance to participate at the
+            event.
+          </label>
+        </div>
+        <div class="flex items-start space-x-2">
+          <input
+            type="checkbox"
+            id="consentOne"
+            name="consent"
+            required
+            class="mt-1"
+          />
+          <label for="consent" class="text-sm text-gray-700">
+            I approve organizers to share the contact information and/or other
+            details filled in this form with its sponsors/partners for marketing
+            purposes.
+          </label>
+        </div>
+        <div class="flex items-start space-x-2">
+          <input
+            type="checkbox"
+            id="consentTwo"
+            name="consent"
+            required
+            class="mt-1"
+          />
+          <label for="consent" class="text-sm text-gray-700">
+            (CONSENT) I provide my consent to organizers to send me latest
+            updates via email with information related to their events and
+            activities.
+          </label>
+        </div>
+        <div class="flex items-start space-x-2">
+          <input
+            type="checkbox"
+            id="consentThree"
+            name="consent"
+            required
+            class="mt-1"
+          />
+          <label for="consent" class="text-sm text-gray-700">
+            I agree to the general Terms and conditions and Privacy policy. of
+            organizers.
           </label>
         </div>
 
         <button
           type="submit"
-          class="bg-black text-white py-3 px-6 rounded hover:bg-gray-800 transition w-full md:w-auto"
+          class="bg-[#02071A] text-white py-3 px-6 rounded hover:bg-gray-800 transition w-full md:w-auto"
         >
           Submit
         </button>
@@ -428,7 +478,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-10 px-6 md:px-20">
+    <footer class="bg-[#02071A] text-white py-10 px-6 md:px-20">
       <div
         class="flex flex-col md:flex-row justify-between text-sm space-y-8 md:space-y-0"
       >

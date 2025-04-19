@@ -6,7 +6,7 @@
     <title>CXO Leaders Forum | Saudi Arabia | Denodo</title>
     <meta
       name="description"
-      content="CXO Leaders Forum | Saudi Arabia | Denodo"
+      content="CXO Leaders Forum | Saudi Arabia | Denodo | UIC"
     />
 
     <link rel="icon" href="./assets/images/icon.png" type="image/png" />
@@ -30,21 +30,37 @@
         class="container mx-auto px-4 py-2 flex justify-between items-center"
       >
         <img
-          class="w-20 h-10 ml-[-2rem] object-contain"
+          class="w-20 h-10 object-contain"
           src="https://saudi.idasummit.com/_next/image?url=%2Fimages%2Flogos%2Flogo.png&w=256&q=75"
           alt=""
         />
         <nav class="space-x-6 text-sm">
-          <a href="#hero" class="hover:underline">Home</a>
-          <a href="#about" class="hover:underline">Who we are</a>
-          <a href="#format" class="hover:underline">Event Format</a>
-          <a href="#contact" class="hover:underline">Contact us</a>
+          <a
+            href="#home"
+            class="hover:underline md:font-medium md:text-sm text-xs"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="hover:underline md:font-medium md:text-sm text-xs"
+            >About</a
+          >
+          <a
+            href="#format"
+            class="hover:underline md:font-medium md:text-sm text-xs"
+            >Event Format</a
+          >
+          <a
+            href="#contact"
+            class="hover:underline md:font-medium md:text-sm text-xs"
+            >Contact</a
+          >
         </nav>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative h-screen overflow-hidden">
+    <section id="home" class="relative h-screen overflow-hidden">
       <!-- Flipped video background -->
       <video
         class="absolute inset-0 w-full h-full object-cover"
@@ -66,12 +82,12 @@
       >
         <img src="./assets/images/logo.png" class="w-[700px] mx-auto" />
         <h2
-          class="text-4xl md:text-5xl px-5 font-bold leading-relaxed mt-[-6rem]"
+          class="text-4xl md:text-5xl px-5 font-bold leading-relaxed md:mt-[-6rem] mt-0"
         >
-          Accelerating Data Unification & Delivery Through Intelligent Data
-          Virtualization
+          "Accelerating Data Unification & Delivery Through Intelligent Data
+          Virtualization"
         </h2>
-        <p class="text-xl mt-3 md:text-lg">
+        <p class="text-xl mt-3 md:text-xl font-mono">
           📅 26th May 2025 | 📍 Dammam, Saudi Arabia
         </p>
       </div>
@@ -79,10 +95,10 @@
 
     <!-- Overview Section -->
     <section id="about" class="py-16 px-6 md:px-20">
-      <h3 class="text-4xl font-bold mb-6">Overview</h3>
+      <h3 class="text-4xl font-bold mb-6">About the Forum</h3>
       <div class="flex flex-col md:flex-row gap-10">
         <div class="md:w-2/3 space-y-4 text-gray-700">
-          <p>About the Forum</p>
+          <!-- <p>About the Forum</p> -->
           <p>
             In an era of rapid digital transformation, the CXO Leaders
             Roundtable Forum serves as an exclusive, high-impact platform for
@@ -281,17 +297,60 @@
       </div>
     </section> -->
 
-    <section class="py-16 px-4 bg-gray-100 text-center">
-      <h2 class="text-2xl font-bold text-gray-800 mb-6">Hosted By</h2>
-      <div class="flex justify-center space-x-8 mt-[-5rem]">
+    <section class="py-16 px-4 bg-white text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-6">Hosted By</h2>
+      <div
+        class="flex justify-center items-center ml-[-2rem] space-x-8 mt-[-4rem]"
+      >
         <div class="flex justify-center items-center">
           <img src="./assets/images/146671.png" alt="Logo 1" class="h-56" />
           <!-- Replace with your first logo -->
         </div>
+        <div style="border-right: 1px solid black; height: 100px"></div>
         <div class="flex justify-center items-center">
-          <img src="./assets/images/UIC-logo.png" alt="Logo 2" class="h-12" />
+          <img
+            src="./assets/images/UIC-logo.png"
+            alt="Logo 2"
+            class="h-12 ml-[2rem]"
+          />
           <!-- Replace with your second logo -->
         </div>
+      </div>
+
+      <div class="bg-[#02071A] px-5 py-8 mt-8 rounded-lg text-white">
+        <p class="text-left text-slate-300 text-sm px-5">
+          <strong>About Denodo Denodo</strong> <br />
+          <br />
+          About Denodo Denodo is a leader in data management. The award-winning
+          Denodo Platform is the leading data integration, management, and
+          delivery platform using a logical approach to enable self-service BI,
+          advanced analytics, hybrid/multi-cloud integration, and enterprise
+          data services. Realizing more than 400% ROI and millions of dollars in
+          benefits, Denodo’s customers across large enterprises and mid-market
+          companies in 30+ industries have received payback in less than 6
+          months.
+        </p>
+        <br />
+        <div
+          class="w-2/3 mb-5 mx-auto"
+          style="border-bottom: 1px solid white"
+        ></div>
+        <p class="text-left text-slate-300 text-sm px-5">
+          <strong>About Utrecht IT Consulting</strong> <br />
+          <br />
+          Founded in 2023, Utrecht IT Consulting, is a leading technology
+          solutions provider committed to driving digital transformation for
+          businesses. Innovation is the cornerstone of UIC and we go out of the
+          ordinary to innovate the traditional way of doing business. We are
+          passionate about helping organizations reimagine their business and
+          thrive with our groundbreaking intelligent automation technology. We
+          deliver cutting-edge automation solutions and proficient consultant
+          services for organizations to begin their digital transformation
+          journey. Our deep domain expertise and proven capabilities in Digital
+          Automation, Data Engineering, Cloud, Business Consulting, have enabled
+          many global organizations in successfully realising their digital
+          transformation goals and scale at speed.
+        </p>
       </div>
     </section>
 
@@ -358,132 +417,134 @@
 
     <!-- Contact Section with Form -->
     <section id="contact" class="bg-white text-center py-20 px-6 md:px-20">
-      <h3 class="text-xl md:text-2xl mb-6">
-        Connect with our team<br />for further information
-      </h3>
-      <form
-        id="contact-form"
-        class="max-w-2xl mx-auto text-left space-y-6"
-        onsubmit="sendEmail(event)"
-      >
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input
-            name="user_name"
-            placeholder="Full Name"
-            required
-            class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-black"
-          />
-          <input
-            name="user_company"
-            placeholder="Company"
-            required
-            class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-black"
-          />
-          <input
-            name="user_phone"
-            placeholder="Phone"
-            required
-            class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-black"
-          />
-          <input
-            name="user_email"
-            type="email"
-            placeholder="Email"
-            required
-            class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-black"
-          />
-        </div>
-        <textarea
-          name="message"
-          placeholder="Comments"
-          required
-          class="w-full border border-gray-300 p-3 rounded-md h-32 resize-none focus:ring-2 focus:ring-black"
-        ></textarea>
-
-        <!-- Consent checkbox -->
-        <div class="flex items-start space-x-2">
-          <input
-            type="checkbox"
-            id="consent"
-            name="consent"
-            required
-            class="mt-1"
-          />
-          <label for="consent" class="text-sm text-gray-700">
-            By filling up this form, I agree to the above
-            <a
-              class="text-blue-600"
-              href="https://www.capstonemiddleeast.com/terms-conditions.html"
-              >Terms and Conditions</a
-            >. I officially and formally mark my acceptance to participate at
-            the event.
-          </label>
-        </div>
-        <div class="flex items-start space-x-2">
-          <input
-            type="checkbox"
-            id="consentOne"
-            name="consent"
-            required
-            class="mt-1"
-          />
-          <label for="consent" class="text-sm text-gray-700">
-            I approve organizers to share the contact information and/or other
-            details filled in this form with its sponsors/partners for marketing
-            purposes.
-          </label>
-        </div>
-        <div class="flex items-start space-x-2">
-          <input
-            type="checkbox"
-            id="consentTwo"
-            name="consent"
-            required
-            class="mt-1"
-          />
-          <label for="consent" class="text-sm text-gray-700">
-            (CONSENT) I provide my consent to organizers to send me latest
-            updates via email with information related to their events and
-            activities.
-          </label>
-        </div>
-        <div class="flex items-start space-x-2">
-          <input
-            type="checkbox"
-            id="consentThree"
-            name="consent"
-            required
-            class="mt-1"
-          />
-          <label for="consent" class="text-sm text-gray-700">
-            I agree to the general
-            <a
-              class="text-blue-600"
-              href="https://www.capstonemiddleeast.com/privacy-policy.html"
-              >Terms and Conditions</a
-            >
-            and
-            <a
-              class="text-blue-600"
-              href="https://www.capstonemiddleeast.com/terms-conditions.html"
-              >Privacy policy</a
-            >. of organizers.
-          </label>
-        </div>
-
-        <button
-          type="submit"
-          class="bg-[#02071A] text-white py-3 px-6 rounded hover:bg-gray-800 transition w-full md:w-auto"
+      <div class="p-5 md:w-1/2 w-full bg-slate-100 rounded-lg mx-auto">
+        <h3 class="text-xl md:text-2xl mb-6">
+          Register now to join the<br />forum as industry expert
+        </h3>
+        <form
+          id="contact-form"
+          class="max-w-2xl mx-auto text-left space-y-6"
+          onsubmit="sendEmail(event)"
         >
-          Submit
-        </button>
-        <p
-          id="form-status"
-          class="text-center text-green-600 font-medium hidden"
-        >
-          Thank you! Message sent.
-        </p>
-      </form>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              name="username"
+              placeholder="Full Name"
+              required
+              class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-black bg-slate-200"
+            />
+            <input
+              name="usercompany"
+              placeholder="Company"
+              required
+              class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-black bg-slate-200"
+            />
+            <input
+              name="userphone"
+              placeholder="Phone"
+              required
+              class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-black bg-slate-200"
+            />
+            <input
+              name="useremail"
+              type="email"
+              placeholder="Email"
+              required
+              class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-black bg-slate-200"
+            />
+          </div>
+          <textarea
+            name="message"
+            placeholder="Comments"
+            required
+            class="w-full border border-gray-300 p-3 rounded-md h-32 resize-none focus:ring-2 focus:ring-black bg-slate-200"
+          ></textarea>
+  
+          <!-- Consent checkbox -->
+          <div class="flex items-start space-x-2">
+            <input
+              type="checkbox"
+              id="consent"
+              name="consent"
+              required
+              class="mt-1"
+            />
+            <label for="consent" class="text-sm text-gray-700">
+              By filling up this form, I agree to the above
+              <a
+                class="text-blue-600"
+                href="https://www.capstonemiddleeast.com/terms-conditions.html"
+                >Terms and Conditions</a
+              >. I officially and formally mark my acceptance to participate at
+              the event.
+            </label>
+          </div>
+          <div class="flex items-start space-x-2">
+            <input
+              type="checkbox"
+              id="consentOne"
+              name="consentOne"
+              required
+              class="mt-1"
+            />
+            <label for="consent" class="text-sm text-gray-700">
+              I approve organizers to share the contact information and/or other
+              details filled in this form with its sponsors/partners for marketing
+              purposes.
+            </label>
+          </div>
+          <div class="flex items-start space-x-2">
+            <input
+              type="checkbox"
+              id="consentTwo"
+              name="consentTwo"
+              required
+              class="mt-1"
+            />
+            <label for="consent" class="text-sm text-gray-700">
+              (CONSENT) I provide my consent to organizers to send me latest
+              updates via email with information related to their events and
+              activities.
+            </label>
+          </div>
+          <div class="flex items-start space-x-2">
+            <input
+              type="checkbox"
+              id="consentThree"
+              name="consentThree"
+              required
+              class="mt-1"
+            />
+            <label for="consent" class="text-sm text-gray-700">
+              I agree to the general
+              <a
+                class="text-blue-600"
+                href="https://www.capstonemiddleeast.com/privacy-policy.html"
+                >Terms and Conditions</a
+              >
+              and
+              <a
+                class="text-blue-600"
+                href="https://www.capstonemiddleeast.com/terms-conditions.html"
+                >Privacy policy</a
+              >. of organizers.
+            </label>
+          </div>
+  
+          <button
+            type="submit"
+            class="bg-[#02071A] text-white py-3 px-6 rounded hover:bg-gray-800 transition w-full md:w-auto"
+          >
+            Submit
+          </button>
+          <p
+            id="form-status"
+            class="text-center text-green-600 font-medium hidden"
+          >
+            Thank you! Message sent.
+          </p>
+        </form>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -501,20 +562,10 @@
         <div>
           <h5 class="font-semibold mb-1">🌐 Join the community</h5>
           <div class="flex space-x-4 mt-2">
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/20/ffffff/twitter.png"
-                alt="Twitter"
-            /></a>
-            <a href="#"
+            <a href="https://www.linkedin.com/company/capstonemena/"
               ><img
                 src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png"
                 alt="LinkedIn"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png"
-                alt="Instagram"
             /></a>
           </div>
         </div>

@@ -427,6 +427,7 @@
           onsubmit="sendEmail(event)"
         >
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input name="place" class="hidden" value="London" />
             <input
               name="username"
               placeholder="Full Name"
@@ -459,7 +460,7 @@
             required
             class="w-full border border-gray-300 p-3 rounded-md h-32 resize-none focus:ring-2 focus:ring-black bg-slate-200"
           ></textarea>
-  
+
           <!-- Consent checkbox -->
           <div class="flex items-start space-x-2">
             <input
@@ -489,8 +490,8 @@
             />
             <label for="consent" class="text-sm text-gray-700">
               I approve organizers to share the contact information and/or other
-              details filled in this form with its sponsors/partners for marketing
-              purposes.
+              details filled in this form with its sponsors/partners for
+              marketing purposes.
             </label>
           </div>
           <div class="flex items-start space-x-2">
@@ -530,7 +531,7 @@
               >. of organizers.
             </label>
           </div>
-  
+
           <button
             type="submit"
             class="bg-[#02071A] text-white py-3 px-6 rounded hover:bg-gray-800 transition w-full md:w-auto"
